@@ -36,7 +36,7 @@ A templete to deploy a **Hexo** blog with **Netlify-CMS** on **Vercel**.
 
 1. Maybe you need to change the **Vercel** provided domain in *Settings > Domains*.
 
-1. Open **`https://<domain>/admin/`** and login to the **Netlify-CMS** back-end. Note that the last character `/` in the URL can not be omitted.
+1. Open **`https://<domain>/admin/`** and login to the **Netlify-CMS** back-end.
 
 1. Test whether **Netlify-CMS** is working properly.
 
