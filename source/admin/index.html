@@ -9,5 +9,18 @@
 </head>
 <body>
   <script src="https://cdn.jsdelivr.net/npm/netlify-cms@latest/dist/netlify-cms.js"></script>
+  <script>
+    CMS.registerPreviewStyle("https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css");
+    var PostPreview = createClass({
+      render: function() {
+        var entry = this.props.entry;
+        return h('div', {"className": "markdown-body"},
+          h('h1', {}, entry.getIn(['data', 'title'])),
+          h('div', {"className": "text"}, this.props.widgetFor('body'))
+        );
+      }
+    });
+    CMS.registerPreviewTemplate("Post", PostPreview);
+  </script>
 </body>
 </html>
